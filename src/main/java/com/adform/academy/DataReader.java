@@ -1,6 +1,5 @@
 package com.adform.academy;
 
-
 import com.adform.kafka.KafkaClient;
 import com.adform.kafka.KafkaReader;
 import kafka.serializer.StringDecoder;
@@ -25,5 +24,6 @@ public class DataReader {
         client.shutdown();
         return data;
     }
+
 
 }
