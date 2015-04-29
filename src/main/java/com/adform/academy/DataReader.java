@@ -1,14 +1,13 @@
 package com.adform.academy;
 
+
 import com.adform.kafka.KafkaClient;
 import com.adform.kafka.KafkaReader;
 import kafka.serializer.StringDecoder;
 import kafka.utils.VerifiableProperties;
-
 import scala.collection.immutable.List;
 
 public class DataReader {
-
     private KafkaReader reader;
     private KafkaClient client;
 
@@ -24,6 +23,4 @@ public class DataReader {
         client.shutdown();
         return data;
     }
-
-
 }
